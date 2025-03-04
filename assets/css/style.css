@@ -8,10 +8,11 @@ body {
   font-size: 1.6rem;
 }
 .back {
+  display: flex;
   background-color: beige;
   width: 70%;
   margin: 10rem 17rem;
-  height: 100vh;
+  height: 800px;
 }
 .body-left {
   width: 40%;
@@ -70,7 +71,7 @@ body {
   padding-top: 3rem;
   color: #5c6168;
   font-family: Inter;
-  font-size: 13px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -96,7 +97,7 @@ body {
   padding-top: 0.7rem;
   color: #5c6168;
   font-family: Inter;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -116,10 +117,112 @@ body {
 }
 .skill-info li {
   padding-bottom: 0.6rem;
-  width: 130px;
   color: #5c6168;
   font-family: Inter;
-  font-size: 10px;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-type: circle;
+}
+.body-right {
+  margin-top: 3rem;
+  margin-left: 4rem;
+  width: 60%;
+}
+.contact {
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+.mail {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.phone {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.linkin {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contact h6 {
+  padding-left: 2rem;
+  color: #5c6168;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact img {
+  width: 15x;
+  height: 15px;
+}
+.photo img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.body-right .top {
+  display: flex;
+}
+.bottom {
+  padding-right: 5rem;
+}
+.bottom h4 {
+  color: #5c6168;
+  padding-top: 1.5rem;
+  padding-right: 4rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.job-exp .title {
+  padding-top: 1.5rem;
+  color: #5c6168;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.job-exp .detail {
+  margin-top: 0.3rem;
+  display: flex;
+}
+.job-exp .company {
+  color: #5c6168;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.job-exp .detail .duration {
+  color: #5c6168;
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: auto;
+}
+ul {
+  margin-top: 1rem;
+}
+.skill-list li {
+  padding-bottom: 0.6rem;
+  color: #5c6168;
+  font-family: Inter;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
