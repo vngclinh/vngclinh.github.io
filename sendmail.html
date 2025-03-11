@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Send Email</title>
+  </head>
+  <body>
+    <section class="contact">
+      <h2>Contact Me!</h2>
+      <form id="contact-form" action="#">
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Full name can't be blank</div>
+          </div>
+
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Email Address"
+              id="email"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Email name can't be blank</div>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              id="phone"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Phone name can't be blank</div>
+          </div>
+          <div class="input-field field">
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="item"
+              autocomplete="off"
+            />
+            <div class="error-txt">Subject name can't be blank</div>
+          </div>
+        </div>
+        <div class="textarea-field field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+            class="item"
+            autocomplete="off"
+          ></textarea>
+          <div class="error-txt">Message name can't be blank</div>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <script src="sendmail.js"></script>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -131,7 +132,7 @@ body {
   width: 60%;
 }
 .contact {
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-left: 5rem;
 }
 .mail {
@@ -148,6 +149,13 @@ body {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
+}
+.click-to-send {
+  text-decoration: none;
+  color: #5c6168;
+}
+.click-to-send:hover {
+  color: black;
 }
 .contact h6 {
   padding-left: 2rem;
