@@ -1,6 +1,3 @@
-function openPopup() {
-  window.open("sendmail.html", "PopupWindow");
-}
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
   const inputs = document.querySelectorAll(".field .item");
