@@ -2,10 +2,14 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+:root {
+  --text-color: #ededed;
+}
 html {
   font-size: 62.5%;
 }
 body {
+  color: var(--text-color);
   font-size: 1.6rem;
 }
 .back {
@@ -13,20 +17,19 @@ body {
   background-color: beige;
   width: 70%;
   margin: 10rem 17rem;
-  height: 800px;
 }
 .body-left {
   width: 40%;
   height: 100%;
-  background-color: #e8eaee;
+  background-color: #1f242d;
 }
 .body-left .main-content {
   padding-left: 5rem;
   padding-top: 4rem;
   padding-right: 2rem;
+  padding-bottom: 5rem;
 }
 .name {
-  color: #5c6168;
   font-family: Inter;
   font-size: 3rem;
   font-style: normal;
@@ -40,7 +43,6 @@ body {
   padding-top: 1.5rem;
 }
 .field-text {
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -55,7 +57,6 @@ body {
 .text-location {
   padding-left: 1.1rem;
   width: 133px;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -70,7 +71,6 @@ body {
 }
 .edu-title {
   padding-top: 3rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 2rem;
   font-style: normal;
@@ -83,11 +83,10 @@ body {
   width: 26px;
   height: 1px;
   flex-shrink: 0;
-  background-color: #5c6168;
+  background-color: var(--text-color);
 }
-.course .title {
+.title {
   margin-top: 2rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -96,7 +95,6 @@ body {
 }
 .course h4 {
   padding-top: 0.7rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -105,7 +103,6 @@ body {
 }
 .skill-title {
   padding-top: 3rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 13px;
   font-style: normal;
@@ -113,18 +110,20 @@ body {
   line-height: normal;
   letter-spacing: 3.575px;
 }
-.skill-info ul {
-  padding-top: 2rem;
-}
+/* .skill-info ul {
+  padding-top: 1rem;
+} */
 .skill-info li {
+  padding-left: 10px;
   padding-bottom: 0.6rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  list-style-type: circle;
+}
+.skill-info li::before {
+  content: "• "; /* Biểu tượng đầu dòng */
 }
 .body-right {
   margin-top: 3rem;
@@ -151,15 +150,16 @@ body {
   align-items: center;
 }
 .click-to-send {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #16222a;
   text-decoration: none;
-  color: #5c6168;
 }
 .click-to-send:hover {
   color: black;
 }
 .contact h6 {
   padding-left: 2rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -183,7 +183,6 @@ body {
   padding-right: 5rem;
 }
 .bottom h4 {
-  color: #5c6168;
   padding-top: 1.5rem;
   padding-right: 4rem;
   font-family: Inter;
@@ -194,7 +193,6 @@ body {
 }
 .job-exp .title {
   padding-top: 1.5rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -206,7 +204,6 @@ body {
   display: flex;
 }
 .job-exp .company {
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -214,7 +211,6 @@ body {
   line-height: normal;
 }
 .job-exp .detail .duration {
-  color: #5c6168;
   text-align: right;
   font-family: Inter;
   font-size: 1.5rem;
@@ -228,11 +224,39 @@ ul {
 }
 .skill-list li {
   padding-bottom: 0.6rem;
-  color: #5c6168;
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   list-style-type: circle;
+}
+.body-right {
+  color: #16222a !important;
+}
+.contact-btn {
+  border: solid 1px #0ef;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1f242d;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+}
+.contact-btn i {
+  color: #0ef;
+}
+.contact-btn span {
+  color: #0ef;
+}
+.contact-btn a {
+  text-decoration: none;
 }
